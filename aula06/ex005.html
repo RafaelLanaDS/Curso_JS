@@ -17,8 +17,23 @@
     <p>Aqui vai o resultado</p>
     <p>aprendo a usar DOM em JavaScript</p>
     <div>Clique em mim</div>
+    <div id = 'msg'> Flamengo</div>
+    <button id ='meubotam'>clique aqui</button>
     <script>
-        window.document.body
+        var botao = document.getElementById('meubotam')
+        botao.innerText = 'voce clicou'
+    </script>
+    <script>
+        var d = document.getElementById('msg')
+        d.style.background ='black'
+        d.innerText = 'melhor do mundo'
+    </script>
+    <script>
+        var corpo = document.body
+        var p1 = document.getElementsByTagName('p')[0]
+        document.write('esta escrito assim:' + p1.innerText)
+        corpo.style.backgroundColor = 'turquoise'
+        p1.style.color = 'red'
     </script>
 </body>
 </html>
