@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pais de origem</title>
+</head>
+<body>
+    <h1>Pais de origem </h1>
+    Digite o nome do seu pais de origem: <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="verificar" onclick="mostra()" >
+    <div id="res">
+
+    </div>
+    <script>
+        function mostra(){
+            var nacio = document.getElementById("txtpais").value // pega o valor digitado dentro do input (caixa de texto) 
+            var res = document.getElementById("res")
+            res.innerHTML = " " // linpa o resultado anterior sempre que clicar no botão
+            if (nacio == "brasil"){
+                res.innerHTML += `Nacionalidade Brasileira`
+            }else {
+                res.innerHTML += `Nacionalidade estrangeira`
+                }
+        }
+    </script>
+</body>
+</html>
