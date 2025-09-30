@@ -1,6 +1,6 @@
 function Contar() {
     //Pegando elementos de entrada (inputs) e a area inde séra mostrado o resultado
-    var ini = document.getElementById('txti') //Campo do numero inicial
+    const ini = document.getElementById('txti') //Campo do numero inicial
     var fim = document.getElementById('txtf')// campo do numero final
     var passo = document.getElementById('txtp')//campo do passo
     var res = document.getElementById('res')//div onde o resultado sera exibido
