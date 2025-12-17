@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+    <h1>Funçoes em JavaScript</h1>
+    <p>uma função é um bloco de codigo projetsodo para executar uma terefa especifica</p>
+    <p>é como uma pequena "Fabrica" onde voce faz um entrada e ele te dá uma saida </p>
+    <p>Pode se  encarado como "mini-programas" projetados para fazer uma tarefa que vai contribuir para todo o codigo</p>
+    <p>Uma função JavaScript é executada quando "algo" a invoca (CHAMA-A)</p>
+    <p id="text"></p>
+    <script>
+        // função de somar valor
+        function soma(v1, v2){
+            return v1 + v2;
+        }
+        document.getElementById("text").innerHTML = soma(2, 2)
+        // ou no console
+        var total = soma(2,2) //devtus
+        console.log(total)
+
+        // função cotação
+        function realParaDolar(real, cotacaoDolar){
+            return real / cotacaoDolar
+        }
+        var total = realParaDolar(50, 5.51).toFixed(2)
+        alert(`O valor em real foi ${total}`)
+
+        // função temperratura
+        function paraCelsius(valorFahrenheit) {
+        return (5 / 9) * (valorFahrenheit - 32);
+        }
+        let x = paraCelsius(77);
+
+        // seleciona o elemento do HTML
+        let resultado = document.getElementById('resultado');
+
+        // escreve no HTML
+        text.innerHTML = `A temperatura de 77°F em Celsius é ${x.toFixed(2)}°C`;
+        </script>
+</html>
