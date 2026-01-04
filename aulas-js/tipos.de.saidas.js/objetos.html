@@ -11,5 +11,21 @@
     <p>Ex: const carro = {marca: "ford", modelo:"Ka", "ano:2015"}</p>
     <p>valores dentro de um objeto são chamados propriedades</p>
     <p>os objetos tambem podem ter metodos. um metodo é uma função colocadas dentro de uma propriedade </p>
+    <p id="text"></p>
+    <script>
+        const carro = { 
+            marca:"ford", 
+            modelo:"KA", 
+            ano:2015, 
+            placa:"ABSD-625",
+            buzina: function(){alert('biiiiiiiiiii')},
+            completo: function(){
+                return `a marca é ${this.marca} e modelo é ${this.modelo}`
+            }
+        };
+        text.innerHTML = `${carro.completo}`
+        carro.buzina();
+        console.log(carro.completo())
+    </script>
 </body>
 </html>
