@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Numeros</h1>
+    <label for="">Numero1</label>
+    <input type="number" id="numero1">
+    <label for="">Numero2</label>
+    <input type="number" id="numero2">
+    <label for="">Numero3</label>
+    <input type="number" id="numero3">
+    <div id="res">
+
+    </div>
+    <input type="button" id="calcular" value="ver o maior numero" onclick="calcular()">
+    <script>
+        function calcular(){
+            const numero1 = Number(document.getElementById("numero1").value)
+            const numero2 = Number(document.getElementById("numero2").value)
+            const numero3 = Number(document.getElementById("numero3").value)
+            const res = document.getElementById('res')
+
+            if(numero1 > numero2 && numero1 > numero3){
+                res.innerHTML = `O maior numero é ${numero1}`
+            } else if(numero2 > numero1 && numero2 > numero3){
+                res.innerHTML = `O maior numero é ${numero2}`
+            } else {
+                res.innerHTML = `O maior numero é ${numero3}`
+            }
+        }
+    </script>
+</body>
+</html>

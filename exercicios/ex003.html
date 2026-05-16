@@ -1,0 +1,38 @@
+<!-- //Exercício 3 — Contar vogais
+Crie uma função que receba uma string e retorne quantas vogais ela tem. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Contador de Vogais</h1>
+    <label for="texto">Digite alguma frase:</label>
+    <input type="text" id="texto">
+    <button onclick="contarVogais()">Contar Vogais</button>
+    <p id="resultado"></p>
+
+    <script>
+        function contarVogais() {
+            const texto = document.getElementById("texto").value;
+            const vogais = "aeiouAEIOU";
+            let contador = 0;
+
+            for (let i = 0; i < texto.length; i++) {
+                if (vogais.includes(texto[i])) {
+                    contador++;
+                }
+            }
+
+            document.getElementById("resultado").innerHTML = `Número de vogais: ${contador}`;
+        }
+    </script>
+
+    <!-- 
+        includes -> verifica se uma string contém outra string 
+        length -> retorna o tamanho de uma string
+     -->
+</body>
+</html>
