@@ -15,11 +15,14 @@ function Contar() {
         var i = Number(ini.value) // valor inicial
         var f = Number(fim.value) // valor final
         var p = Number(passo.value) // passo da contagem
-
+        if (p <= 0){
+            window.alert("Passo invalido considerando passo 1")
+            p = 1
+        }
         // Caso 1: Contagem crescente (valor inicial é menor que o final)
         if (i < f){
             for(var c = i; c <= f; c += p){ // começa do i, vai até f, pulando de p em p
-            res.innerHTML += `${c} ` // adiciona o numero atual no resultado
+            res.innerHTML += `${c} \u{1F449}` // adiciona o numero atual no resultado
             }
         }else {
             // Caso 2: contagem regresiva (valor inicial é maior que o final)
@@ -27,7 +30,6 @@ function Contar() {
                 res.innerHTML += `${c} ` //adiciona o numero atual no resultado
             }
         }
-        
     }
     //Pegue o que já está dentro de res e adicione o valor da variável c seguido de um espaço."
 }

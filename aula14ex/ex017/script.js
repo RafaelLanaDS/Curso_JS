@@ -10,7 +10,7 @@ function tabuada() {
         while (c <= 10) {
             var item = document.createElement('option')
             item.text = `${n} X ${c} = ${n*c}`
-            item.value = `tab${c}`
+            item.value = `tab${c}` // o value é para identificar o item, mas não é necessário nesse caso
             tab.appendChild(item)
             c++
         }
