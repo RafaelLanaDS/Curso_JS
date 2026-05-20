@@ -14,3 +14,5 @@ function salarioBruto(valorDaHora, horasPorDia, diasDoMes){
 const salarioLiquido = salarioBruto(12.50, 6, 25)
 
 console.log(`valor do salario liquido é ${salarioLiquido}`)
+
+console.log(salarioBruto(12.50, 6, 25))
