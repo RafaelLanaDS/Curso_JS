@@ -1,0 +1,2 @@
+//Exercício 3:
+// Crie uma função que resolva a equação e retorne um objeto com { x, mensagem }. Se possível, retorne o valor de X e a mensagem "Solução encontrada". Se impossível, retorne X como null e mensagem "Solução impossível".
